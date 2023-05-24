@@ -6,16 +6,13 @@ def str_to_list(string):
     for letter in string:
         first.append(letter)
     return first
-# some testing
-x = ord("a")
-d = chr(127)
 
 
 word = (input("please enter phrase: "))
 word = str_to_list(word)
 
 # this block and for statement turns a list of characters into
-# their corresponding ascii but rotated 13 characters forward.
+# their corresponding ascii, but rotated 13 characters forward.
 phrase = []
 for i in word:
     if ord(i) + 13 > 126:
